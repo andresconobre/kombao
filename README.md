@@ -1,2 +1,0 @@
-# kombao
-Site do Kombão
