@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         comicneue: ['Comic Neue', 'cursive'],
+        rampart: ['Rampart One', 'cursive']
       },
     },
   },

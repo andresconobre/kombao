@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kombão - Frases do Felibuda</title>
+    <link rel="stylesheet" href="public/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Rampart+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="bg-gradient-to-r from-indigo-700 to-pink-600 absolute top-0 w-full">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between py-8">
+                <figure class="w-30">
+                    <img src="img/logo.png" alt="Logo do Kombão" class="w-full object-contain">
+                </figure>
+                <ul class="flex gap-8 uppercase font-rampart text-white font-bold text-2xl">
+                    <li class="hover:underline hover:underline-offset-4"><a href="/">Home</a></li>
+                    <li class="hover:underline hover:underline-offset-4"><a href="/membros.html">Conheça os membros</a>
+                    </li>
+                    <li class="hover:underline hover:underline-offset-4"><a href="/frases-felibuda.html">Frases do
+                            Felibuda</a></li>
+                    <li class="hover:underline hover:underline-offset-4"><a href="">Galeria</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mt-32">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-4 gap-8">
+                    <!-- card -->
+                    <div class="bg-white rounded p-4">
+                        <figure class="w-full aspect-square">
+                            <img src="img/andre.png" alt="Foto do André" class="object-cover w-full aspect-square">
+                            <figcaption class="py-2">
+                                <h2 class="pb-2 inline-block">André Pires Nobre</h2>
+                                <!-- tags -->
+                                <div class="swiper tagsSwiper">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                        <div class="swiper-slide bg-gradient-to-br from-purple-600 to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
+                                            B A B A Q U I N H A
+                                        </div>
+                                        <div class="swiper-slide bg-green-800 rounded text-center py-0.5 px-3 !w-auto">
+                                            Verme
+                                        </div>
+                                        <div class="swiper-slide bg-slate-700 rounded text-center py-0.5 px-3 !w-auto">
+                                            DEV
+                                        </div>
+                                        <div class="swiper-slide bg-red-600 rounded text-center py-0.5 px-3 !w-auto">
+                                            MM
+                                        </div>
+                                        <div class="swiper-slide bg-blue-500 rounded text-center py-0.5 px-3 !w-auto">
+                                            Pintel
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
