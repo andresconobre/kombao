@@ -5,3 +5,24 @@
 html {
     @apply bg-slate-900
 }
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    content: '' !important;
+}
+
+.swiper-button-next {
+    right: 0 !important;
+}
+
+.swiper-button-prev {
+    left: 0 !important;
+}
+
+.swiper-pagination {
+    bottom: 0 !important;
+    top: auto !important;
+}
+
+.swiper-pagination-progressbar-fill {
+    background: rgb(225, 1, 192) !important;
+}

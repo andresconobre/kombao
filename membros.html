@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kombão - Membros</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="stylesheet" href="public/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,15 +41,31 @@
             <div class="container mx-auto">
                 <div class="grid grid-cols-4 gap-8">
                     <!-- card -->
-                    <div class="bg-white rounded p-4 shadow-lg">
+                    <div class="bg-white rounded !p-4 shadow-lg">
                         <figure class="w-full aspect-square">
-                            <img src="img/andre.png" alt="Foto do André" class="object-cover w-full aspect-square rounded-sm">
+                            <div class="swiper fotosSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/andre/andre.png" alt="Foto do André"
+                                            class="object-cover object-top w-full aspect-square rounded-sm">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="img/andre/andre2.png" alt="Foto do André"
+                                            class="object-cover object-top w-full aspect-square rounded-sm">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"><img src="img/right-arrow.svg"
+                                        alt="Seta para a Direita"></div>
+                                <div class="swiper-button-prev"><img src="img/left-arrow.svg"
+                                        alt="Seta para a esquerda"></div>
+                            </div>
                             <figcaption class="py-2">
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">André</h2>
                                 <!-- tags -->
-                                <div class="swiper tagsSwiper">
+                                <div class="swiper tagsSwiper !px-4">
                                     <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
-                                        <div class="swiper-slide bg-gradient-to-br from-purple-600 to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
+                                        <div
+                                            class="swiper-slide bg-gradient-to-br from-purple-600 to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
                                             B A B A Q U I N H A
                                         </div>
                                         <div class="swiper-slide bg-green-800 rounded text-center py-0.5 px-3 !w-auto">
@@ -68,6 +84,10 @@
                                             Pintel
                                         </div>
                                     </div>
+                                    <div class="swiper-button-next"><img src="img/right-arrow.svg"
+                                            alt="Seta para a Direita"></div>
+                                    <div class="swiper-button-prev"><img src="img/left-arrow.svg"
+                                            alt="Seta para a esquerda"></div>
                                 </div>
                             </figcaption>
                         </figure>
@@ -75,13 +95,25 @@
                     <!-- card -->
                     <div class="bg-white rounded p-4 shadow-lg">
                         <figure class="w-full aspect-square">
-                            <img src="img/luquinhas.png" alt="Foto do André" class="object-cover w-full aspect-square rounded-sm">
+                            <div class="swiper fotosSwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/luquinhas/luquinhas.png" alt="Foto do Luquinhas"
+                                            class="object-cover object-top w-full aspect-square rounded-sm">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-button-next2"><img src="img/right-arrow.svg"
+                                        alt="Seta para a Direita"></div>
+                                <div class="swiper-button-prev swiper-button-prev2"><img src="img/left-arrow.svg"
+                                        alt="Seta para a esquerda"></div>
+                            </div>
                             <figcaption class="py-2">
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Luquinha</h2>
                                 <!-- tags -->
-                                <div class="swiper tagsSwiper">
+                                <div class="swiper tagsSwiper2">
                                     <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
-                                        <div class="swiper-slide bg-gradient-to-br from-green-800 to-black rounded text-center py-0.5 px-3 !w-auto">
+                                        <div
+                                            class="swiper-slide bg-gradient-to-br from-green-800 to-black rounded text-center py-0.5 px-3 !w-auto">
                                             S M O L
                                         </div>
                                         <div class="swiper-slide bg-slate-400 rounded text-center py-0.5 px-3 !w-auto">
@@ -97,6 +129,10 @@
                                             Yu-Gi-Oh!
                                         </div>
                                     </div>
+                                    <div class="swiper-button-next swiper-button-next2"><img src="img/right-arrow.svg"
+                                            alt="Seta para a Direita"></div>
+                                    <div class="swiper-button-prev swiper-button-prev2"><img src="img/left-arrow.svg"
+                                            alt="Seta para a esquerda"></div>
                                 </div>
                             </figcaption>
                         </figure>
@@ -104,16 +140,28 @@
                     <!-- card -->
                     <div class="bg-white rounded p-4 shadow-lg">
                         <figure class="w-full aspect-square">
-                            <img src="img/salache.png" alt="Foto do André" class="object-cover object-top w-full aspect-square rounded-sm">
+                            <div class="swiper fotosSwiper3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="img/salache/salache.png" alt="Foto do Salache"
+                                            class="object-cover object-top w-full aspect-square rounded-sm">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-button-next3"><img src="img/right-arrow.svg"
+                                        alt="Seta para a Direita"></div>
+                                <div class="swiper-button-prev swiper-button-prev3"><img src="img/left-arrow.svg"
+                                        alt="Seta para a esquerda"></div>
+                            </div>
                             <figcaption class="py-2">
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Salache</h2>
                                 <!-- tags -->
-                                <div class="swiper tagsSwiper">
+                                <div class="swiper tagsSwiper3">
                                     <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
                                         <!-- <div class="swiper-slide bg-gradient-to-br from-green-800 to-black rounded text-center py-0.5 px-3 !w-auto">
                                             S M O L
                                         </div> -->
-                                        <div class="swiper-slide bg-red-400 text-black rounded text-center py-0.5 px-3 !w-auto">
+                                        <div
+                                            class="swiper-slide bg-red-400 text-black rounded text-center py-0.5 px-3 !w-auto">
                                             Dermografista
                                         </div>
                                         <div class="swiper-slide bg-red-500 rounded text-center py-0.5 px-3 !w-auto">
@@ -126,6 +174,10 @@
                                             Yu-Gi-Ohzeiro
                                         </div>
                                     </div>
+                                    <div class="swiper-button-next swiper-button-next3"><img src="img/right-arrow.svg"
+                                            alt="Seta para a Direita"></div>
+                                    <div class="swiper-button-prev swiper-button-prev3"><img src="img/left-arrow.svg"
+                                            alt="Seta para a esquerda"></div>
                                 </div>
                             </figcaption>
                         </figure>
