@@ -26,3 +26,7 @@ html {
 .swiper-pagination-progressbar-fill {
     background: rgb(225, 1, 192) !important;
 }
+
+.container {
+    @apply max-w-6xl mx-auto px-4
+}
