@@ -30,3 +30,7 @@ html {
 .container {
     @apply max-w-7xl mx-auto px-4
 }
+
+.swiper-pagination-fraction{
+    @apply !text-white !font-comicneue pb-0.5 font-bold
+} 
