@@ -28,5 +28,5 @@ html {
 }
 
 .container {
-    @apply max-w-6xl mx-auto px-4
+    @apply max-w-7xl mx-auto px-4
 }
