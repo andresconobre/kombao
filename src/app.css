@@ -21,6 +21,7 @@ html {
 .swiper-pagination {
     bottom: 0 !important;
     top: auto !important;
+    z-index: 99999 !important;
 }
 
 .swiper-pagination-progressbar-fill {
