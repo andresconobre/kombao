@@ -11,7 +11,8 @@ module.exports = {
       },
       fontFamily: {
         comicneue: ['Comic Neue', 'cursive'],
-        rampart: ['Rampart One', 'cursive']
+        opensans: ['Open Sans', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif']
       },
     },
   },

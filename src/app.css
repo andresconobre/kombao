@@ -43,3 +43,7 @@ html {
 .swiper-button-disabled {
     @apply !hidden
 }
+
+.header {
+    @apply flex items-center justify-between py-8 gap-4
+}

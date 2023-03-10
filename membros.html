@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="public/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Rampart+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <header class="bg-gradient-to-r from-indigo-700 to-pink-600 absolute top-0 w-full hidden md:block">
+    <header class="bg-gradient-to-r from-indigo-700 to-pink-600 top-0 w-full">
         <div class="container">
-            <div class="flex items-center justify-between py-8">
+            <div class="header">
                 <figure class="w-30">
                     <img src="img/logo.png" alt="Logo do Kombão" class="w-full object-contain">
                 </figure>
-                <ul class="flex gap-8 uppercase font-rampart text-white font-bold text-2xl">
+                <ul class="flex gap-8 uppercase font-opensans text-white font-bold text-2xl">
                     <li class="hover:underline hover:underline-offset-4"><a href="/">Home</a></li>
                     <li class="hover:underline hover:underline-offset-4"><a href="/membros.html">Conheça os membros</a>
                     </li>
@@ -37,7 +36,7 @@
         </div>
     </header>
     <main>
-        <section class="mt-32 pb-12">
+        <section class="py-12">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- card -->
@@ -100,7 +99,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">André</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-br from-purple-600 to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
                                             B A B A Q U I N H A
@@ -173,7 +172,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Luquinha</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper2">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-br from-green-800 to-black rounded text-center py-0.5 px-3 !w-auto">
                                             S M O L
@@ -251,7 +250,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Salache</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-br from-yellow-700 to-red-300 text-white rounded text-center py-0.5 px-3 !w-auto">
                                             D E R M O G R A F I S T A
@@ -322,10 +321,10 @@
                                 <div class="swiper-pagination"></div>
                             </div>
                             <figcaption class="py-2">
-                                <h2 class="pb-2 inline-block font-semibold text-indigo-700">Nicolas</h2>
+                                <h2 class="pb-2 inline-block font-semibold text-indigo-700">Ņ̷̨̛̠̼͎̯͎̙̝͙̗͉̞̤͉͎̜̻̙͈̝̼͂̔͐̃͑́̂̌͗̌̿̋̈́̊͒̎̇̚̚̕͠͝͠͠ͅͅI̷̧̡̛̟͇͓̯̝̰̪͈̖̙̖͓̮̗̟̼͓͚̳͎͕̻̗͎͈̗̜̱̦̤̖͓̬̰̖̱̩͓̪͔͈̽̔̆͌̐͒̀̀̌̓̃̓͑̓̾͑̅̒͐̃́͋̑̐̄͑̊̈́͆́̽͗́̽̆̄̓̉͐͜͜͜͜͜͠͠ͅC̴̡̡̧̧͔̳̥̬̙̦̼͖̠̹͇̠̱̗͉̫̖͕͎̝̘̦̮͚̠̣͉̺̰̭̭͖̲̗̬̟̳̳̪̤̄̊̔̏̊̒̿͜͜Ơ̶̧̢̧̜͓͍̭̙̘̯͇͓̺̜̮̼͈̜͖͉͕̪̻̰͉̗̘̖͉̦̠̪͉̞͍̘͔̯͕̳̗͛́̔̈́̑̑̈̿͂̔̔͗̊̾̅̀̃̓̓̽̏̄͆̓̏̀̌͊͑̾̏̅̍͗͑̍̾͗͌̆̀̓͘͜͠ͅĻ̸̢̢̡̡̡̨̢̛̯͙͉͇̦̩̹͖͇̫͔̜̲̩̯̰̳͕͈̣̥͇̬̺̬͖̣͍̰̻̖̭̪̰͇͔̐͛́̽̈͗͐̑͂͒̄͆̇̊̂͊̈́̽̆̎̈̾͛̌̽̈́̓̋͑͂̍̊̎́̓̇͐̕͘̕̕͘͜͜͝͠͝Ą̶̧̢̝̖̙̤̭̣̖̤̦̤̯͖͉͙͚̀̑̊̔̌̏͑̉̐̍̈́͒͑͐̀͒͆͑̅͛̆̈́̉͊͋͆͊̋̕͘͝S̷̯̖̣̦͔͉̰̾</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-r from-blue-600 via-yellow-300 to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
                                             U R U G U A I O
@@ -394,7 +393,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Felibuda</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-br from-blue-400 to-slate-300 rounded text-center py-0.5 px-3 !w-auto">
                                             M É D I C O
@@ -477,7 +476,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Ribeiro</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div class="swiper-slide lgbt rounded text-center py-0.5 px-3 !w-auto">
                                             L G B T
                                         </div>
@@ -556,7 +555,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Helena</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-tr from-red-400 to-blue-400 rounded text-center py-0.5 px-3 !w-auto">
                                             L O U C A
@@ -655,7 +654,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Laroca</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-br from-black to-yellow-400 rounded text-center py-0.5 px-3 !w-auto">
                                             C A N H O T O
@@ -761,7 +760,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Kadidja</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-tl from-purple-400 via-orange-500 to-blue-300 rounded text-center py-0.5 px-3 !w-auto">
                                             B A I A N A
@@ -843,7 +842,7 @@
                                 <h2 class="pb-2 inline-block font-semibold text-indigo-700">Rafael</h2>
                                 <!-- tags -->
                                 <div class="swiper tagsSwiper3">
-                                    <div class="swiper-wrapper text-white font-normal text-base font-comicneue">
+                                    <div class="swiper-wrapper text-white font-normal text-base font-quicksand">
                                         <div
                                             class="swiper-slide bg-gradient-to-tl from-red-600 via-black to-blue-600 rounded text-center py-0.5 px-3 !w-auto">
                                             B A I A N I S T A
