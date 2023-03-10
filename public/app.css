@@ -1839,6 +1839,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-red-600 {
+  --tw-gradient-from: #dc2626;
+  --tw-gradient-to: rgb(220 38 38 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-yellow-300 {
   --tw-gradient-to: rgb(253 224 71 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #fde047, var(--tw-gradient-to);
@@ -1847,6 +1853,11 @@ video {
 .via-orange-500 {
   --tw-gradient-to: rgb(249 115 22 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), #f97316, var(--tw-gradient-to);
+}
+
+.via-black {
+  --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #000, var(--tw-gradient-to);
 }
 
 .to-black {
