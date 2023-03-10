@@ -9,7 +9,7 @@ var swiper = new Swiper(".tagsSwiper", {
 });
 
 var swiper = new Swiper(".fotosSwiper", {
-	effect: "flip",
+	effect: "cube",
 	grabCursor: true,
 	pagination: {
 	  el: ".swiper-pagination",
@@ -32,7 +32,7 @@ var swiper = new Swiper(".tagsSwiper2", {
 });
 
 var swiper = new Swiper(".fotosSwiper2", {
-	effect: "flip",
+	effect: "cube",
 	grabCursor: true,
 	pagination: {
 	  el: ".swiper-pagination",
@@ -55,7 +55,7 @@ var swiper = new Swiper(".tagsSwiper3", {
 });
 
 var swiper = new Swiper(".fotosSwiper3", {
-	effect: "flip",
+	effect: "cube",
 	grabCursor: true,
 	pagination: {
 	  el: ".swiper-pagination",
