@@ -757,14 +757,6 @@ video {
   aspect-ratio: 1 / 1;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .\!w-auto {
   width: auto !important;
 }
@@ -2124,10 +2116,6 @@ video {
   vertical-align: super;
 }
 
-.font-comicneue {
-  font-family: Comic Neue, cursive;
-}
-
 .font-opensans {
   font-family: Open Sans, sans-serif;
 }
@@ -2149,6 +2137,11 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2633,6 +2626,10 @@ html {
   padding-bottom: 2rem;
 }
 
+.header img {
+  width: 13rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2712,10 +2709,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
