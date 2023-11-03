@@ -1,20 +1,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { RouterLink, RouterView } from "vue-router";
-import Header from './components/Header.vue';
-
-const pages = ref([
-  'membros', 
-  'galeria'
-])
+import Home from './views/Home.vue';
 
 </script>
 
 <template>
-
-    <!-- <RouterLink to="/">Home</RouterLink> -->
-    <Header :pages="pages"/>
-
-  <!-- <RouterView /> -->
+    <Home />
 </template>
 
