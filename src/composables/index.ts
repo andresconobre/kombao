@@ -5,6 +5,7 @@ interface Membro {
   lowername: string
   tags: string[]
   cor?: string
+  fotos?: number
 }
 
 const pages = ref<string[]>([
@@ -34,52 +35,62 @@ const membros: Membro[] = reactive([
   {
     nome: 'André',
     lowername: 'andre',
-    tags: ['Babaquinha', 'Sulista', 'Garoto de programa']
+    tags: ['Babaquinha', 'Sulista', 'Dev'],
+    fotos: 11
   },
   {
     nome: 'Luquinha',
     lowername: 'luquinhas',
-    tags: ['Smol', 'Sulista', 'Lolzeiro', 'MTG']
+    tags: ['Smol', 'Sulista', 'Lolzeiro', 'MTG'],
+    fotos: 7
   },
   {
     nome: 'Salache',
     lowername: 'salache',
-    tags: ['Dermografista', 'Sulista', 'MTG']
+    tags: ['Dermografista', 'Sulista', 'MTG'],
+    fotos: 9
   },
   {
     nome: 'Nicolas',
     lowername: 'nicolas',
-    tags: ['Uruguaio', 'Sulista', 'Gato']
+    tags: ['Uruguaio', 'Sulista', 'Gato'],
+    fotos: 8
   },
   {
     nome: 'Felibuda',
     lowername: 'felibuda',
-    tags: ['Açougueiro', 'Sulista', 'Gado']
+    tags: ['Açougueiro', 'Sulista', 'Gado'],
+    fotos: 6
   },
   {
     nome: 'Ribeiro',
     lowername: 'ribeiro',
-    tags: ['LGBT', 'Sulista', 'Lolzeira', 'Narguileira']
+    tags: ['LGBT', 'Sulista', 'Lolzeira', 'Narguileira'],
+    fotos: 8
   },
   {
     nome: 'Helena',
     lowername: 'helena',
-    tags: ['Louca', 'Paulista', 'Lolzeira']
+    tags: ['Louca', 'Paulista', 'Lolzeira'],
+    fotos: 8
   },
   {
     nome: 'Laroca',
     lowername: 'laroca',
-    tags: ['Canhoto', 'Sulista', 'Desempregado']
+    tags: ['Canhoto', 'Sulista', 'Desempregado'],
+    fotos: 14
   },
   {
     nome: 'Kadidja',
     lowername: 'kadidja',
-    tags: ['Baiana', 'Lolzeira', 'Professora']
+    tags: ['Baiana', 'Lolzeira', 'Professora'],
+    fotos: 14
   },
   {
     nome: 'Rafael',
     lowername: 'rafael',
-    tags: ['Baianista', 'Sulista', 'Lolzeiro', 'Professor']
+    tags: ['Baianista', 'Sulista', 'Lolzeiro', 'Professor'],
+    fotos: 10
   },
 ])
 
