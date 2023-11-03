@@ -1,4 +1,15 @@
+@import url('./animations.css');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h-screen {
+    @apply supports-[height:100dvh]:h-[100dvh]
+}
+
+.hover-underline-animation {
+    @apply inline-block relative after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-full after:bg-white after:origin-bottom-right after:duration-[0.25s] after:transition-transform after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left
+}
+
 
