@@ -10,7 +10,11 @@ module.exports = {
       center: true,
       padding: '1rem'
     },
-    extend: {},
+    extend: {
+      padding: {
+        'header': '112px'
+      }
+    },
   },
   plugins: [],
 }
