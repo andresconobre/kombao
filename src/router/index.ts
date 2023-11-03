@@ -3,7 +3,7 @@ import { pages } from '../composables/index'
 import HomePage from "../components/HomePage.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: "/",
