@@ -1,5 +1,5 @@
 @import url('./animations.css');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +9,7 @@
 }
 
 .hover-underline-animation {
-    @apply inline-block relative after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-full after:bg-white after:origin-bottom-right after:duration-[0.25s] after:transition-transform after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left
+    @apply inline-block relative after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-full after:bg-black after:origin-bottom-right after:duration-[0.25s] after:transition-transform after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left
 }
 
 
