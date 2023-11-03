@@ -12,4 +12,8 @@
     @apply inline-block relative after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:rounded-full after:bg-black after:origin-bottom-right after:duration-[0.25s] after:transition-transform after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left
 }
 
+.tooltip-arrow {
+    @apply after:absolute after:-top-1.5 after:-translate-y-1/2 after:right-full after:left-1/2 after:ml-[-7px] after:border-[7px] after:!border-[transparent_transparent_black_transparent]
+}
+
 
