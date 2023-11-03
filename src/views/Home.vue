@@ -9,7 +9,6 @@ import { pages } from '../composables/index'
 
 <template>
 
-    <!-- <RouterLink to="/">Home</RouterLink> -->
     <Header :pages="pages"/>
     <RouterView />
     
