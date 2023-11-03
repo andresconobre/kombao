@@ -1,4 +1,11 @@
-import { ref } from "vue";
+import { reactive, ref } from "vue";
+
+interface Membro {
+  nome: string
+  lowername: string
+  tags: string[]
+  cor?: string
+}
 
 const pages = ref<string[]>([
   'membros', 
@@ -23,7 +30,61 @@ const frases = ref<string[]>([
   'Bagaçou'
 ])
 
+const membros: Membro[] = reactive([
+  {
+    nome: 'André',
+    lowername: 'andre',
+    tags: ['Babaquinha', 'Sulista', 'Garoto de programa']
+  },
+  {
+    nome: 'Luquinha',
+    lowername: 'luquinhas',
+    tags: ['Smol', 'Sulista', 'Lolzeiro', 'MTG']
+  },
+  {
+    nome: 'Salache',
+    lowername: 'salache',
+    tags: ['Dermografista', 'Sulista', 'MTG']
+  },
+  {
+    nome: 'Ņ̷̨̛̠̼͎̯͎̙̝͙̗͉̞̤͉͎̜̻̙͈̝̼͂̔͐̃͑́̂̌͗̌̿̋̈́̊͒̎̇̚̚̕͠͝͠͠ͅͅI̷̧̡̛̟͇͓̯̝̰̪͈̖̙̖͓̮̗̟̼͓͚̳͎͕̻̗͎͈̗̜̱̦̤̖͓̬̰̖̱̩͓̪͔͈̽̔̆͌̐͒̀̀̌̓̃̓͑̓̾͑̅̒͐̃́͋̑̐̄͑̊̈́͆́̽͗́̽̆̄̓̉͐͜͜͜͜͜͠͠ͅC̴̡̡̧̧͔̳̥̬̙̦̼͖̠̹͇̠̱̗͉̫̖͕͎̝̘̦̮͚̠̣͉̺̰̭̭͖̲̗̬̟̳̳̪̤̄̊̔̏̊̒̿͜͜Ơ̶̧̢̧̜͓͍̭̙̘̯͇͓̺̜̮̼͈̜͖͉͕̪̻̰͉̗̘̖͉̦̠̪͉̞͍̘͔̯͕̳̗͛́̔̈́̑̑̈̿͂̔̔͗̊̾̅̀̃̓̓̽̏̄͆̓̏̀̌͊͑̾̏̅̍͗͑̍̾͗͌̆̀̓͘͜͠ͅĻ̸̢̢̡̡̡̨̢̛̯͙͉͇̦̩̹͖͇̫͔̜̲̩̯̰̳͕͈̣̥͇̬̺̬͖̣͍̰̻̖̭̪̰͇͔̐͛́̽̈͗͐̑͂͒̄͆̇̊̂͊̈́̽̆̎̈̾͛̌̽̈́̓̋͑͂̍̊̎́̓̇͐̕͘̕̕͘͜͜͝͠͝Ą̶̧̢̝̖̙̤̭̣̖̤̦̤̯͖͉͙͚̀̑̊̔̌̏͑̉̐̍̈́͒͑͐̀͒͆͑̅͛̆̈́̉͊͋͆͊̋̕͘͝S̷̯̖̣̦͔͉̰̾',
+    lowername: 'nicolas',
+    tags: ['Uruguaio', 'Sulista', 'Gato']
+  },
+  {
+    nome: 'Felibuda',
+    lowername: 'felibuda',
+    tags: ['Açougueiro', 'Sulista', 'Gado']
+  },
+  {
+    nome: 'Ribeiro',
+    lowername: 'ribeiro',
+    tags: ['LGBT', 'Sulista', 'Lolzeira', 'Narguileira']
+  },
+  {
+    nome: 'Helena',
+    lowername: 'helena',
+    tags: ['Louca', 'Paulista', 'Lolzeira']
+  },
+  {
+    nome: 'Laroca',
+    lowername: 'laroca',
+    tags: ['Canhoto', 'Sulista', 'Desempregado']
+  },
+  {
+    nome: 'Kadidja',
+    lowername: 'kadidja',
+    tags: ['Baiana', 'Lolzeira', 'Professora']
+  },
+  {
+    nome: 'Rafael',
+    lowername: 'rafael',
+    tags: ['Baianista', 'Sulista', 'Lolzeiro', 'Professor']
+  },
+])
+
 export {
     pages,
-    frases
+    frases,
+    membros
 }
