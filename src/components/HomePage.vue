@@ -1,9 +1,9 @@
 <script setup lang='ts'>
-import Banner from './BannerHome.vue'
+import BannerHome from './BannerHome.vue'
 import MembrosHome from './MembrosHome.vue'
 </script>
 
 <template>
-    <Banner />
+    <BannerHome />
     <MembrosHome />
 </template>
