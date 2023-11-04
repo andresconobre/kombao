@@ -12,7 +12,7 @@
             </RouterLink>
             <ul class="flex items-center justify-between gap-8">
                 <li v-for="(page, index) in pages" :key="index">
-                    <RouterLink :to="page" class="uppercase hover-underline-animation">{{page}}</RouterLink>
+                    <RouterLink :to="page" class="uppercase hover-underline-animation">{{page === 'videos' ? 'vídeos' : page}}</RouterLink>
                 </li>
             </ul>
         </div>
