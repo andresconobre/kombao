@@ -16,4 +16,19 @@
     @apply after:absolute after:-top-1.5 after:-translate-y-1/2 after:right-full after:left-1/2 after:ml-[-7px] after:border-[7px] after:!border-[transparent_transparent_black_transparent]
 }
 
+.swiper-button-prev, .swiper-button-next {
+    @apply !text-white !opacity-0 group-hover:!opacity-100 transition duration-300
+}
+
+.swiper-button-prev {
+    @apply !left-1
+}
+
+.swiper-button-next {
+    @apply !right-1
+}
+
+.swiper-button-disabled {
+    @apply group-hover:!opacity-[0.35]
+}
 
