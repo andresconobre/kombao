@@ -11,6 +11,7 @@ interface Membro {
 const pages = ref<string[]>([
   'membros', 
   'galeria',
+  'videos'
 ])
 
 const frases = ref<string[]>([
