@@ -81,6 +81,12 @@ const membros: Membro[] = reactive([
     fotos: 14
   },
   {
+    nome: 'Mario',
+    lowername: 'mario',
+    tags: ['Maromba', 'Paulista', 'Lolzeiro'],
+    fotos: 8
+  },
+  {
     nome: 'Kadidja',
     lowername: 'kadidja',
     tags: ['Baiana', 'Lolzeira', 'Professora'],
