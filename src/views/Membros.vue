@@ -15,10 +15,10 @@ const modules = ref([Navigation])
         <div class="container py-12">
             <h2 class="text-center font-bold text-4xl text-black pb-8">Membros</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <div v-for="({ nome, lowername, fotos, tags }, index) in membros" :key="index" class="">
+                <div v-for="({ nome, lowername, fotos, tags }, index) in membros" :key="index">
                     <!-- <RouterLink :to="`/membros/${lowername}`"> -->
                         <swiper :slides-per-view="1" class="rounded-md group border-2 border-black relative" navigation :modules="modules">
-                            <swiper :breakpoints="{ 0:{ slidesPerView:1.5 }, 768:{ slidesPerView:2 } }" :space-between="20" loop autoplay :modules="[Autoplay]" class="!absolute w-full top-0 !px-4 mt-2 !opacity-0 group-hover:!opacity-100 transition duration-300">
+                            <swiper :breakpoints="{ 0:{ slidesPerView:1.5 }, 768:{ slidesPerView:2 } }" :space-between="20" loop autoplay :modules="[Autoplay]" class="!absolute w-full top-0 !px-4 mt-2 !opacity-0 group-hover:!opacity-100 transition duration-300 hover:cursor-grab">
                                 <swiper-slide v-for="tag in tags" :key="tag">
                                     <p class="text-center bg-white rounded-lg font-raleway text-base border border-black">{{tag}}</p>
                                 </swiper-slide>
