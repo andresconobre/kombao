@@ -99,6 +99,18 @@ const membros: Membro[] = reactive([
     tags: ['Baianista', 'Sulista', 'Lolzeiro', 'Professor'],
     fotos: 10
   },
+  {
+    nome: 'Guido',
+    lowername: 'guido',
+    tags: ['Bancário', 'Paraense', 'Speedrunner'],
+    fotos: 1
+  },
+  {
+    nome: 'LG',
+    lowername: 'lg',
+    tags: ['Pombo', 'Sulista', 'Lolzeiro', 'Pizzaiolo', 'Pai'],
+    fotos: 4
+  },
 ])
 
 export {
