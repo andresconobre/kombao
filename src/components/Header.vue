@@ -6,11 +6,11 @@
     import { onMounted, ref } from "vue";
     const props = defineProps(['pages'])
     const html = document.getElementById('html')
-    const isDark = ref(null)
+    const isDark = ref(true)
 
     function changeMode() {
         html?.classList.toggle('dark')
-        if (html.classList.contains('dark')) {
+        if (html?.classList.contains('dark')) {
             isDark.value = true 
             localStorage.setItem('theme', 'dark');
         } else {
@@ -21,10 +21,10 @@
 
     onMounted(() => {
         if (localStorage.getItem('theme') === 'dark' || localStorage.getItem('theme') === null) {
-            html.classList.add('dark')
+            html?.classList.add('dark')
             isDark.value = true
         } else {
-            html.classList.remove('dark')
+            html?.classList.remove('dark')
             isDark.value = false
         }
     })
