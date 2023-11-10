@@ -44,6 +44,7 @@
                     <button @click="changeMode" class="rounded-full dark-neumorphism light-neumorphism w-10 h-10 grid place-items-center">
                         <DarkIcon v-show="!isDark" class="w-5 h-5 fill-gray-dark"/>
                         <LightIcon v-show="isDark" class="w-5 h-5"/>
+                        <span class="sr-only">Alterar para modo {{isDark ? 'claro' : 'escuro'}}</span>
                     </button>
                 </li>
             </ul>
