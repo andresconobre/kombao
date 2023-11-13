@@ -8,12 +8,12 @@ const buttonClose = ref(null)
 
 const openMenu = () => {
     isOpen.value = true
-    html.classList.add('overflow-hidden')
+    html?.classList.add('overflow-hidden')
 }
 
-const closeMenu = (e) => {
+const closeMenu = (e: PointerEvent) => {
     isOpen.value = false
-    html.classList.remove('overflow-hidden')
+    html?.classList.remove('overflow-hidden')
     
     // if (e.target === buttonClose.value || !e.target.contains())
 }
