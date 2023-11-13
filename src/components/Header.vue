@@ -1,33 +1,8 @@
 <script setup lang="ts">
-    import { RouterLink } from "vue-router";
-    import Logo from './icons/LogoKombao.vue'
-    import DarkIcon from './icons/DarkIcon.vue'
-    import LightIcon from './icons/LightIcon.vue'
-    import { onMounted, ref } from "vue";
-    const props = defineProps(['pages'])
-    const html = document.getElementById('html')
-    const isDark = ref(true)
-
-    function changeMode() {
-        html?.classList.toggle('dark')
-        if (html?.classList.contains('dark')) {
-            isDark.value = true 
-            localStorage.setItem('theme', 'dark');
-        } else {
-            isDark.value = false
-            localStorage.setItem('theme', 'light');  
-        }
-    }
-
-    onMounted(() => {
-        if (localStorage.getItem('theme') === 'dark' || localStorage.getItem('theme') === null) {
-            html?.classList.add('dark')
-            isDark.value = true
-        } else {
-            html?.classList.remove('dark')
-            isDark.value = false
-        }
-    })
+import { RouterLink } from "vue-router";
+import Logo from './icons/LogoKombao.vue'
+import ThemeButton from '../components/ThemeButton.vue'
+const props = defineProps(['pages'])
 </script>
 
 <template>
@@ -36,18 +11,17 @@
             <RouterLink to="/">
                 <Logo />
             </RouterLink>
-            <ul class="flex items-center justify-between gap-8">
+            <ul class="hidden lg:flex items-center justify-between gap-8">
                 <li v-for="(page, index) in pages" :key="index">
                     <RouterLink :to="page" class="uppercase hover-underline-animation">{{page === 'videos' ? 'vídeos' : page}}</RouterLink>
                 </li>
                 <li>
-                    <button @click="changeMode" class="rounded-full dark-neumorphism light-neumorphism w-10 h-10 grid place-items-center">
-                        <DarkIcon v-show="!isDark" class="w-5 h-5 fill-gray-dark"/>
-                        <LightIcon v-show="isDark" class="w-5 h-5"/>
-                        <span class="sr-only">Alterar para modo {{isDark ? 'claro' : 'escuro'}}</span>
-                    </button>
+                    <ThemeButton/>
                 </li>
             </ul>
+            <div class="block lg:hidden">
+                <ThemeButton/>
+            </div>
         </div>
     </header>
 </template>
