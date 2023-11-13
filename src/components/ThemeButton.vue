@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted, ref } from "vue";
 import DarkIcon from './icons/DarkIcon.vue'
 import LightIcon from './icons/LightIcon.vue'
