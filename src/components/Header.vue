@@ -2,6 +2,7 @@
 import { RouterLink } from "vue-router";
 import Logo from './icons/LogoKombao.vue'
 import ThemeButton from '../components/ThemeButton.vue'
+import HamburgerMenu from '../components/HamburgerMenu.vue'
 const props = defineProps(['pages'])
 </script>
 
@@ -19,8 +20,9 @@ const props = defineProps(['pages'])
                     <ThemeButton/>
                 </li>
             </ul>
-            <div class="block lg:hidden">
+            <div class="flex items-center justify-between gap-4 lg:hidden">
                 <ThemeButton/>
+                <HamburgerMenu :pages="pages"/>
             </div>
         </div>
     </header>
