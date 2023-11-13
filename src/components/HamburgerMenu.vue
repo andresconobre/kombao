@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import LogoKombao from "./icons/LogoKombao.vue"
+import Logo from "./icons/LogoKombao.vue"
 const props = defineProps(['pages'])
 const isOpen = ref(false)
 const html = document.getElementById('html')
@@ -33,7 +33,7 @@ const closeMenu = () => {
             <div class="p-12">
                 <div class="flex items-center justify-between">
                     <RouterLink to="/" @click="closeMenu">
-                        <LogoKombao/>   
+                        <Logo class="!h-16"/>   
                     </RouterLink>
                     <button @click="closeMenu" ref="buttonClose" class="text-2xl">X</button>
                 </div>
