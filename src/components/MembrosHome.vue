@@ -4,7 +4,7 @@ import { membros } from '../composables/index'
 </script>
 
 <template>
-    <div class="grid place-items-center h-screen font-space-mono">
+    <div class="grid place-items-center py-12 lg:py-0 lg:h-screen font-space-mono">
         <div class="container">
             <h2 class="text-center font-bold text-3xl dark:text-gray-light text-gray-dark">Membros</h2>
             <div class="relative md:flex justify-center items-center lg:px-8 lg:w-5/6 m-auto mt-16 flex-wrap grid grid-cols-2 place-items-center">
