@@ -13,7 +13,8 @@ module.exports = {
     },
     extend: {
       padding: {
-        'header': '112px'
+        'headerLG': '112px',
+        'headerSM': '88px'
       },
       colors: {
         gray: {

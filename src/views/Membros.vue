@@ -11,7 +11,7 @@ const modules = ref([Navigation])
 </script>
 
 <template>
-    <div class="pt-header font-space-mono">
+    <div class="pt-headerSM md:pt-headerLG font-space-mono">
         <div class="container py-12">
             <h2 class="text-center font-bold text-4xl dark:text-gray-light text-gray-dark pb-8">Membros</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
