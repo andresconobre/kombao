@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .h-screen {
-    @apply supports-[height:100dvh]:h-[100dvh]
+    @apply supports-[height:100svh]:h-[100svh]
 }
 
 .hover-underline-animation {
