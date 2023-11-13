@@ -44,3 +44,9 @@
     @apply bg-gray-light shadow-[5px_5px_6px_#969696,-5px_-5px_6px_#FFFFFF]
 }
 
+@media (min-width: 1024px) {
+    .lg\:h-screen {
+        @apply supports-[height:100svh]:!h-[100svh]
+    }
+}
+
