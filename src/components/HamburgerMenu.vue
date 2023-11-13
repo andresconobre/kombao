@@ -11,7 +11,7 @@ const openMenu = () => {
     html?.classList.add('overflow-hidden')
 }
 
-const closeMenu = (e: PointerEvent) => {
+const closeMenu = () => {
     isOpen.value = false
     html?.classList.remove('overflow-hidden')
     
