@@ -13,7 +13,7 @@
 }
 
 .tooltip {
-    @apply text-center font-medium text-sm lg:text-lg capitalize mt-4 px-4 lg:px-0 rounded-md dark:bg-gray-light bg-gray-dark text-gray-light dark:text-gray-dark invisible group-hover:visible
+    @apply text-center font-medium text-sm lg:text-lg capitalize mt-4 px-4 lg:px-0 rounded-md dark:bg-gray-light bg-gray-dark text-gray-light dark:text-gray-dark md:invisible md:group-hover:visible
 }
 
 .tooltip-arrow {
